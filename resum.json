@@ -1,0 +1,75 @@
+{
+  "basics": {
+    "name": "Muhammad Hamza",
+    "label": "BSCS Sudent",
+    "headline": "BSCS Student passionate about technology, programming, and building practical software solutions.",
+    "summary": "BSCS student based in Karachi, Pakistan. I am building my skills in software development, web technologies, programming, and problem-solving, with a focus on creating practical projects and continuously improving my technical skills.",
+    "location": {
+      "country": "Pakistan",
+      "countryCode": "PK",
+      "region": "Karachi"
+    },
+    "email": "hamzaadvani2006@gmail.com",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "mumairkhan13",
+        "url": "https://www.linkedin.com/in/mumairkhan13/",
+        "icon": "fa-brands fa-linkedin-in"
+      },
+      {
+        "network": "GitHub",
+        "username": "Hamza Advani",
+        "url": "https://github.com/Hamza-Advani"
+      }
+    ]
+  },
+  "about": {
+    "intro": [
+      "My Matric and Intermediate background is in Pre-Engineering,"
+    ],
+    "strengths": [
+      "Core programming logic and concepts like OOP"
+    ]
+  },
+  "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        "C",
+        "Python",
+        "C++"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Iqra Huffaz Boys Sec.School",
+      "area": "Computer Science",
+      "studyType": "Matric"
+    },
+    {
+      "institution": "Government National College",
+      "area": "Pre-Engineering",
+      "studyType": "Intermediate"
+  
+    },
+    {
+      "institution": "GU Tech",
+      "area": "Computer Science",
+      "studyType": "BSCS",
+      "startDate": "2026-01-01",
+      "endDate": "2030-12-01"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Urdu",
+      "fluency": "Native"
+    }
+  ]
+}

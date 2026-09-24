@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhammad Hamza - BSCS Student, Software Developer & Technology Enthusiast based in Karachi, Pakistan. Portfolio showcasing C, C++, Python, and Web projects.">
+    <meta name="keywords" content="Muhammad Hamza, Student Portfolio, BSCS, GU Tech, C++, Python, C, Software Developer, Karachi, Computer Science">
+    <meta name="author" content="Muhammad Hamza">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Muhammad Hamza | BSCS Student & Software Developer">
+    <meta property="og:description" content="Clean, modern student portfolio showcasing technical projects in C, C++, Python, and Web Development.">
+    <meta property="og:type" content="website">
+
+    <title>Muhammad Hamza | BSCS Student & Software Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas & Cyber Glow -->
+    <div class="tech-grid-bg" aria-hidden="true"></div>
+    <div class="ambient-glow glow-1" aria-hidden="true"></div>
+    <div class="ambient-glow glow-2" aria-hidden="true"></div>
+    <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="header">
+        <nav id="navbar" class="navbar" aria-label="Main Navigation">
+            <div class="nav-container">
+                <!-- Brand Logo -->
+                <a href="#home" class="logo" aria-label="Muhammad Hamza Portfolio Home">
+                    <span class="logo-symbol">&lt;</span>
+                    <span class="logo-text">MH</span>
+                    <span class="logo-symbol">/&gt;</span>
+                    <span class="logo-status-dot" title="Active & Available"></span>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="#home" class="nav-item active">Home</a></li>
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#skills" class="nav-item">Skills</a></li>
+                    <li><a href="#projects" class="nav-item">Projects</a></li>
+                    <li><a href="#education" class="nav-item">Education</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+
+                <!-- Nav Controls & Actions -->
+                <div class="nav-actions">
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle" class="icon-btn theme-toggle" aria-label="Toggle Dark and Light Mode" title="Toggle theme">
+                        <i data-lucide="sun" class="theme-icon sun-icon"></i>
+                        <i data-lucide="moon" class="theme-icon moon-icon"></i>
+                    </button>
+
+                    <!-- Quick Resume Button -->
+                    <button class="btn btn-outline btn-sm open-resume-btn" id="nav-resume-btn">
+                        <i data-lucide="file-text"></i>
+                        <span>Resume</span>
+                    </button>
+
+                    <!-- Contact CTA -->
+                    <a href="#contact" class="btn btn-primary btn-sm nav-cta">
+                        <span>Get in Touch</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                    <!-- Mobile Hamburger Button -->
+                    <button id="mobile-toggle" class="hamburger-btn" aria-label="Open mobile navigation" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>
+                        <span class="bar bar-3"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu-backdrop" class="mobile-menu-backdrop" aria-hidden="true"></div>
+    <aside id="mobile-menu" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+        <div class="mobile-drawer-header">
+            <a href="#home" class="logo mobile-drawer-logo">
+                <span class="logo-symbol">&lt;</span>
+                <span class="logo-text">MH</span>
+                <span class="logo-symbol">/&gt;</span>
+            </a>
+            <button id="mobile-close" class="icon-btn close-btn" aria-label="Close mobile navigation">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-link active"><i data-lucide="home"></i> Home</a></li>
+            <li><a href="#about" class="mobile-link"><i data-lucide="user"></i> About</a></li>
+            <li><a href="#skills" class="mobile-link"><i data-lucide="cpu"></i> Skills</a></li>
+            <li><a href="#projects" class="mobile-link"><i data-lucide="code"></i> Projects</a></li>
+            <li><a href="#education" class="mobile-link"><i data-lucide="graduation-cap"></i> Education</a></li>
+            <li><a href="#contact" class="mobile-link"><i data-lucide="mail"></i> Contact</a></li>
+        </ul>
+
+        <div class="mobile-drawer-footer">
+            <button class="btn btn-outline btn-block open-resume-btn" id="mobile-resume-btn">
+                <i data-lucide="file-text"></i> View Full Resume
+            </button>
+            <div class="mobile-theme-row">
+                <span>Theme Mode</span>
+                <button id="mobile-theme-toggle" class="btn btn-sm btn-ghost">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                    <span id="theme-label-text">Dark Mode</span>
+                </button>
+            </div>
+            <div class="mobile-socials">
+                <a href="https://github.com/Hamza-Advani" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/mumairkhan13/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="mailto:hamzaadvani2006@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Container -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="container hero-container">
+                <!-- Left: Hero Text & Pitch -->
+                <div class="hero-left reveal">
+                    <div class="hero-badge">
+                        <span class="pulsing-dot"></span>
+                        <span>BSCS Student &bull; Open for Internships & Projects</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Building Scalable Software with 
+                        <span class="gradient-tech">Algorithmic Precision</span>
+                    </h1>
+
+                    <div class="typing-container">
+                        <span class="typing-prefix">&gt; </span>
+                        <span class="typing-text" id="typing-text">BSCS Student @ GU Tech</span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+
+                    <p class="hero-desc">
+                        I am <strong>Muhammad Hamza</strong>, a Computer Science undergraduate at <strong>GU Tech</strong> based in Karachi. With strong foundations in Pre-Engineering, I specialize in core programming logic, Object-Oriented Design, and developing practical software with <strong>C, C++, and Python</strong>.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary btn-lg">
+                            <span>Explore Projects</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <button class="btn btn-glass btn-lg open-resume-btn">
+                            <i data-lucide="file-code"></i>
+                            <span>View Resume</span>
+                        </button>
+                    </div>
+
+                    <!-- Quick Metrics Chips -->
+                    <div class="hero-metrics">
+                        <div class="metric-item">
+                            <span class="metric-value">2026-30</span>
+                            <span class="metric-label">BSCS Timeline</span>
+                        </div>
+                        <div class="metric-divider"></div>
+                        <div class="metric-item">
+                            <span class="metric-value">3+</span>
+                            <span class="metric-label">Core Languages</span>
+                        </div>
+                        <div class="metric-divider"></div>
+                        <div class="metric-item">
+                            <span class="metric-value">Karachi</span>
+                            <span class="metric-label">Base Location</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="hero-social-row">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://github.com/Hamza-Advani" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub Profile">
+                            <i data-lucide="github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mumairkhan13/" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn Profile">
+                            <i data-lucide="linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <button class="social-pill copy-email-btn" data-email="hamzaadvani2006@gmail.com" title="Click to copy email">
+                            <i data-lucide="copy"></i>
+                            <span class="copy-text">Copy Email</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive Cyber Terminal -->
+                <div class="hero-right reveal">
+                    <div class="terminal-card glass-panel">
+                        <!-- Terminal Window Titlebar -->
+                        <div class="terminal-bar">
+                            <div class="terminal-dots">
+                                <span class="dot dot-close"></span>
+                                <span class="dot dot-minimize"></span>
+                                <span class="dot dot-expand"></span>
+                            </div>
+                            <div class="terminal-tabs">
+                                <button class="term-tab active" data-tab="cpp">
+                                    <i data-lucide="file-code" class="tab-icon"></i> student.cpp
+                                </button>
+                                <button class="term-tab" data-tab="json">
+                                    <i data-lucide="braces" class="tab-icon"></i> profile.json
+                                </button>
+                                <button class="term-tab" data-tab="bash">
+                                    <i data-lucide="terminal" class="tab-icon"></i> run.sh
+                                </button>
+                            </div>
+                            <div class="terminal-badge">C++20</div>
+                        </div>
+
+                        <!-- Terminal Body Content -->
+                        <div class="terminal-body" id="terminal-content">
+                            <!-- Tab 1: C++ Code (Default) -->
+                            <div class="tab-pane active" id="pane-cpp">
+<pre><code><span class="c-keyword">#include</span> <span class="c-string">&lt;iostream&gt;</span>
+<span class="c-keyword">#include</span> <span class="c-string">&lt;vector&gt;</span>
+<span class="c-keyword">#include</span> <span class="c-string">&lt;string&gt;</span>
+
+<span class="c-keyword">class</span> <span class="c-type">CSStudent</span> {
+<span class="c-keyword">public:</span>
+    <span class="c-type">std::string</span> name = <span class="c-string">"Muhammad Hamza"</span>;
+    <span class="c-type">std::string</span> degree = <span class="c-string">"BSCS @ GU Tech"</span>;
+    <span class="c-type">std::vector&lt;std::string&gt;</span> stack = {
+        <span class="c-string">"C"</span>, <span class="c-string">"C++"</span>, <span class="c-string">"Python"</span>, <span class="c-string">"OOP"</span>
+    };
+
+    <span class="c-type">void</span> <span class="c-func">executeMission</span>() {
+        <span class="c-type">std::cout</span> &lt;&lt; <span class="c-string">"Building robust code &amp; solving DSA problems!\n"</span>;
+    }
+};
+
+<span class="c-type">int</span> <span class="c-func">main</span>() {
+    <span class="c-type">CSStudent</span> hamza;
+    hamza.<span class="c-func">executeMission</span>();
+    <span class="c-keyword">return</span> <span class="c-num">0</span>;
+}</code></pre>
+                            </div>
+
+                            <!-- Tab 2: JSON Profile -->
+                            <div class="tab-pane" id="pane-json">
+<pre><code>{
+  <span class="c-keyword">"name"</span>: <span class="c-string">"Muhammad Hamza"</span>,
+  <span class="c-keyword">"role"</span>: <span class="c-string">"BSCS Student"</span>,
+  <span class="c-keyword">"university"</span>: <span class="c-string">"GU Tech, Karachi"</span>,
+  <span class="c-keyword">"interests"</span>: [
+    <span class="c-string">"Object-Oriented Programming"</span>,
+    <span class="c-string">"Data Structures &amp; Algorithms"</span>,
+    <span class="c-string">"Web Technologies"</span>
+  ],
+  <span class="c-keyword">"status"</span>: <span class="c-string">"Ready for Collabs"</span>
+}</code></pre>
+                            </div>
+
+                            <!-- Tab 3: Bash Terminal -->
+                            <div class="tab-pane" id="pane-bash">
+<pre><code><span class="c-prompt">hamza@gutech:~$</span> g++ student.cpp -o hamza_bin
+<span class="c-prompt">hamza@gutech:~$</span> ./hamza_bin
+<span class="c-output">[STATUS] Compiler: GCC 13.2.0</span>
+<span class="c-output">[SUCCESS] Building robust code &amp; solving DSA problems!</span>
+<span class="c-output">[UPTIME] 100% Passion &amp; Dedication</span>
+<span class="c-prompt">hamza@gutech:~$</span> <span class="c-cursor">_</span></code></pre>
+                            </div>
+                        </div>
+
+                        <!-- Terminal Footer -->
+                        <div class="terminal-footer">
+                            <div class="term-status">
+                                <span class="status-indicator"></span> UTF-8
+                            </div>
+                            <div class="term-stats">
+                                <span>Ln 24, Col 1</span>
+                                <span>GCC Ready</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Floating Pill Tags -->
+                    <div class="floating-pills">
+                        <span class="pill-badge pill-1"><i data-lucide="terminal"></i> C++ / OOP</span>
+                        <span class="pill-badge pill-2"><i data-lucide="binary"></i> Algorithms</span>
+                        <span class="pill-badge pill-3"><i data-lucide="code-2"></i> Python 3</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag"><i data-lucide="user-check"></i> Biography</span>
+                    <h2 class="section-title">About My Journey</h2>
+                    <p class="section-subtitle">Bridging mathematical principles with computer science architecture</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Bio Narrative Card -->
+                    <div class="about-story-card glass-panel reveal">
+                        <div class="story-header">
+                            <div class="avatar-box">
+                                <span class="avatar-letters">MH</span>
+                            </div>
+                            <div>
+                                <h3 class="story-name">Muhammad Hamza</h3>
+                                <p class="story-tagline">Computer Science Undergraduate &bull; Karachi, Pakistan</p>
+                            </div>
+                        </div>
+
+                        <div class="story-body">
+                            <p>
+                                Welcome to my digital workspace! I am currently pursuing a <strong>Bachelor of Science in Computer Science (BSCS)</strong> at <strong>GU Tech</strong>. My academic foundation in Pre-Engineering instilled an instinctive appreciation for mathematical logic, problem breakdown, and computational thinking.
+                            </p>
+                            <p>
+                                Rather than just writing superficial code, I enjoy understanding what happens under the hood—from <strong>pointer arithmetic and memory efficiency in C/C++</strong> to <strong>Object-Oriented Programming (OOP)</strong> and modern scripting pipelines in <strong>Python</strong>.
+                            </p>
+                            <p>
+                                I am actively seeking software engineering internships, collaborative student projects, and open-source contributions where I can make an impact while sharpening my technical craft.
+                            </p>
+                        </div>
+
+                        <!-- Highlights Grid -->
+                        <div class="story-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i data-lucide="zap"></i></div>
+                                <div>
+                                    <div class="highlight-title">Analytical Mindset</div>
+                                    <div class="highlight-sub">Pre-Engineering mathematics &amp; scientific rigor</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i data-lucide="shield-check"></i></div>
+                                <div>
+                                    <div class="highlight-title">OOP Foundations</div>
+                                    <div class="highlight-sub">Encapsulation, Inheritance, Polymorphism &amp; Clean Design</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i data-lucide="git-branch"></i></div>
+                                <div>
+                                    <div class="highlight-title">Version Control</div>
+                                    <div class="highlight-sub">Continuous Git workflow &amp; GitHub collaboration</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i data-lucide="book-open"></i></div>
+                                <div>
+                                    <div class="highlight-title">Continuous Growth</div>
+                                    <div class="highlight-sub">Self-driven learner exploring modern web &amp; software tech</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Side Stats & Fast Facts Card -->
+                    <div class="about-sidebar reveal">
+                        <!-- Quick Card: Personal Details -->
+                        <div class="glass-panel info-card">
+                            <h4 class="card-mini-title"><i data-lucide="sparkles"></i> Fast Facts</h4>
+                            <ul class="info-list">
+                                <li>
+                                    <span class="info-label">Degree:</span>
+                                    <span class="info-val">BSCS (2026 – 2030)</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Institution:</span>
+                                    <span class="info-val">GU Tech</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Location:</span>
+                                    <span class="info-val">Karachi, Pakistan</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Primary Languages:</span>
+                                    <span class="info-val">C, C++, Python</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Spoken Languages:</span>
+                                    <span class="info-val">Urdu (Native), English (Working)</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Availability:</span>
+                                    <span class="info-badge green">Open to Opportunities</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Download / View CV Action Card -->
+                        <div class="glass-panel cta-box-card">
+                            <div class="cta-box-icon"><i data-lucide="file-check"></i></div>
+                            <h4>Curriculum Vitae</h4>
+                            <p>Review comprehensive academic records, skill ratings, and coursework details.</p>
+                            <div class="cta-actions">
+                                <button class="btn btn-primary btn-block open-resume-btn">
+                                    <i data-lucide="eye"></i> View Full Resume
+                                </button>
+                                <a href="mailto:hamzaadvani2006@gmail.com" class="btn btn-outline btn-block">
+                                    <i data-lucide="send"></i> Direct Email
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag"><i data-lucide="cpu"></i> Capabilities</span>
+                    <h2 class="section-title">Technical Skillset</h2>
+                    <p class="section-subtitle">Core languages, computer science foundations, and development tools</p>
+
+                    <!-- Filter Controls -->
+                    <div class="skills-filter-tabs" role="tablist">
+                        <button class="filter-tab active" data-filter="all">All Skills</button>
+                        <button class="filter-tab" data-filter="languages">Programming</button>
+                        <button class="filter-tab" data-filter="foundations">CS Concepts</button>
+                        <button class="filter-tab" data-filter="tools">Tools &amp; Workflow</button>
+                    </div>
+                </div>
+
+                <div class="skills-catalog">
+                    <!-- Skill Card 1: C++ -->
+                    <div class="skill-card glass-panel reveal" data-category="languages">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-badge cpp-badge">
+                                <span>C++</span>
+                            </div>
+                            <span class="skill-tag">Systems &amp; Logic</span>
+                        </div>
+                        <h3 class="skill-name">C++ Programming</h3>
+                        <p class="skill-desc">Strong grasp of memory management, pointer manipulation, STL data structures, standard algorithms, and competitive coding fundamentals.</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar-info">
+                                <span>Proficiency</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="--skill-width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-keywords">
+                            <span>STL</span>
+                            <span>Pointers</span>
+                            <span>Algorithms</span>
+                            <span>Memory</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 2: Python -->
+                    <div class="skill-card glass-panel reveal" data-category="languages">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-badge py-badge">
+                                <i data-lucide="terminal"></i>
+                            </div>
+                            <span class="skill-tag">Automation &amp; Data</span>
+                        </div>
+                        <h3 class="skill-name">Python 3</h3>
+                        <p class="skill-desc">Practical scripting for automation, data scraping, file parsing, algorithmic problem solving, and building rapid prototypes.</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar-info">
+                                <span>Proficiency</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="--skill-width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-keywords">
+                            <span>Scripting</span>
+                            <span>Web Scraping</span>
+                            <span>Data Parsing</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 3: C Language -->
+                    <div class="skill-card glass-panel reveal" data-category="languages">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-badge c-badge">
+                                <span>C</span>
+                            </div>
+                            <span class="skill-tag">Core Fundamentals</span>
+                        </div>
+                        <h3 class="skill-name">C Language</h3>
+                        <p class="skill-desc">Understanding low-level hardware communication, memory layouts, structures, pointers, dynamic memory allocation (malloc/free), and file I/O.</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar-info">
+                                <span>Proficiency</span>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="--skill-width: 82%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-keywords">
+                            <span>Pointers</span>
+                            <span>Memory Allocation</span>
+                            <span>Data Structs</span>
+                            <span>File I/O</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 4: Object-Oriented Programming (OOP) -->
+                    <div class="skill-card glass-panel reveal" data-category="foundations">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-badge oop-badge">
+                                <i data-lucide="box"></i>
+                            </div>
+                            <span class="skill-tag">Core Architecture</span>
+                        </div>
+                        <h3 class="skill-name">Object-Oriented Programming</h3>
+                        <p class="skill-desc">Solid mastery of the four OOP pillars: Encapsulation, Abstraction, Inheritance, and Polymorphism with practical modular architecture.</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar-info">
+                                <span>Proficiency</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="--skill-width: 88%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-keywords">
+                            <span>Encapsulation</span>
+                            <span>Inheritance</span>
+                            <span>Polymorphism</span>
+                            <span>Abstraction</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 5: Data Structures & Algorithms -->
+                    <div class="skill-card glass-panel reveal" data-category="foundations">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-badge dsa-badge">
+                                <i data-lucide="binary"></i>
+                            </div>
+                            <span class="skill-tag">Problem Solving</span>
+                        </div>
+                        <h3 class="skill-name">Data Structures &amp; Logic</h3>
+                        <p class="skill-desc">Arrays, Linked Lists, Stacks, Queues, Hash Tables, Sorting algorithms (Merge, Quick, Bubble), and Big-O computational complexity analysis.</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar-info">
+                                <span>Proficiency</span>
+                                <span class="skill-percent">78%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="--skill-width: 78%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-keywords">
+                            <span>Linked Lists</span>
+                            <span>Sorting</span>
+                            <span>Stacks &amp; Queues</span>
+                            <span>Big-O</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 6: Git & Tools -->
+                    <div class="skill-card glass-panel reveal" data-category="tools">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-badge git-badge">
+                                <i data-lucide="git-branch"></i>
+                            </div>
+                            <span class="skill-tag">Workflow</span>
+                        </div>
+                        <h3 class="skill-name">Git, GitHub &amp; Tooling</h3>
+                        <p class="skill-desc">Version control workflows, commit etiquette, branch management, GitHub repository hosting, VS Code configuration, and GCC/Clang compilers.</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar-info">
+                                <span>Proficiency</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="--skill-width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-keywords">
+                            <span>Git CLI</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>GCC / G++</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 7: Web Fundamentals -->
+                    <div class="skill-card glass-panel reveal" data-category="languages">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-badge web-badge">
+                                <i data-lucide="code"></i>
+                            </div>
+                            <span class="skill-tag">Web Technologies</span>
+                        </div>
+                        <h3 class="skill-name">HTML5, CSS3 &amp; Modern JS</h3>
+                        <p class="skill-desc">Semantic HTML, modern CSS styling with flexbox/grid, glassmorphism UI design, responsive interfaces, and vanilla JavaScript DOM manipulation.</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar-info">
+                                <span>Proficiency</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="--skill-width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-keywords">
+                            <span>HTML5</span>
+                            <span>Modern CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 8: Spoken Languages & Soft Skills -->
+                    <div class="skill-card glass-panel reveal" data-category="tools">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-badge lang-badge">
+                                <i data-lucide="globe"></i>
+                            </div>
+                            <span class="skill-tag">Communication</span>
+                        </div>
+                        <h3 class="skill-name">Spoken Languages &amp; Soft Skills</h3>
+                        <p class="skill-desc">Fluent in Urdu (Native) and English (Intermediate/Working). Strong critical thinking, collaborative team spirit, and quick adaptability.</p>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar-info">
+                                <span>Urdu: Native &bull; English: Working</span>
+                                <span class="skill-percent">100%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="--skill-width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-keywords">
+                            <span>Urdu (Native)</span>
+                            <span>English</span>
+                            <span>Collaboration</span>
+                            <span>Adaptability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag"><i data-lucide="folder-git-2"></i> Portfolio Works</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Real-world software, algorithm implementations, and developer tools</p>
+
+                    <!-- Filter Buttons -->
+                    <div class="projects-filter-tabs" role="tablist">
+                        <button class="proj-tab active" data-filter="all">All Projects</button>
+                        <button class="proj-tab" data-filter="cpp">C / C++</button>
+                        <button class="proj-tab" data-filter="python">Python</button>
+                        <button class="proj-tab" data-filter="web">Web Systems</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Algoverse -->
+                    <article class="project-card glass-panel reveal" data-category="cpp">
+                        <div class="project-banner project-banner-cpp">
+                            <div class="project-banner-overlay"></div>
+                            <div class="project-code-snippet">
+                                <div class="snippet-header">
+                                    <span class="snippet-dot red"></span>
+                                    <span class="snippet-dot yellow"></span>
+                                    <span class="snippet-dot green"></span>
+                                    <span class="snippet-title">sorter.cpp</span>
+                                </div>
+                                <code>void quickSort(vector&lt;int&gt;&amp; arr, int low, int high);</code>
+                            </div>
+                            <span class="project-badge"><i data-lucide="cpu"></i> Systems &amp; DSA</span>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">C++ &bull; Data Structures</span>
+                                <span class="project-status live">Featured</span>
+                            </div>
+                            <h3 class="project-title">Algoverse - Algorithm Visualizer &amp; Benchmarker</h3>
+                            <p class="project-desc">
+                                A high-performance simulation and visualization suite in C++ for classic sorting routines (QuickSort, MergeSort, HeapSort) and graph traversals (BFS, DFS, Dijkstra). Provides step-by-step memory tracking and execution timing metrics.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>C++20</span>
+                                <span>Data Structures</span>
+                                <span>STL</span>
+                                <span>Algorithm Optimization</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Hamza-Advani" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <i data-lucide="github"></i> Source Code
+                                </a>
+                                <button class="btn btn-primary btn-sm project-modal-trigger" data-project="algoverse">
+                                    <span>Details</span>
+                                    <i data-lucide="arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: PyTrend -->
+                    <article class="project-card glass-panel reveal" data-category="python">
+                        <div class="project-banner project-banner-py">
+                            <div class="project-banner-overlay"></div>
+                            <div class="project-code-snippet">
+                                <div class="snippet-header">
+                                    <span class="snippet-dot red"></span>
+                                    <span class="snippet-dot yellow"></span>
+                                    <span class="snippet-dot green"></span>
+                                    <span class="snippet-title">scraper.py</span>
+                                </div>
+                                <code>soup = BeautifulSoup(res.text, 'html.parser')</code>
+                            </div>
+                            <span class="project-badge"><i data-lucide="terminal"></i> Automation</span>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Python &bull; Automation &amp; Scraping</span>
+                                <span class="project-status active">Active Tool</span>
+                            </div>
+                            <h3 class="project-title">PyTrend - Automated Web Intelligence Scraper</h3>
+                            <p class="project-desc">
+                                A multithreaded web scraper built with Python, BeautifulSoup, and Requests. Automates extraction of structured price points, tech job postings, and news headlines, exporting normalized results into clean CSV and JSON datasets.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>Python 3</span>
+                                <span>BeautifulSoup4</span>
+                                <span>Requests</span>
+                                <span>Data Parsing</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Hamza-Advani" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <i data-lucide="github"></i> Source Code
+                                </a>
+                                <button class="btn btn-primary btn-sm project-modal-trigger" data-project="pytrend">
+                                    <span>Details</span>
+                                    <i data-lucide="arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: OmniBank -->
+                    <article class="project-card glass-panel reveal" data-category="cpp">
+                        <div class="project-banner project-banner-oop">
+                            <div class="project-banner-overlay"></div>
+                            <div class="project-code-snippet">
+                                <div class="snippet-header">
+                                    <span class="snippet-dot red"></span>
+                                    <span class="snippet-dot yellow"></span>
+                                    <span class="snippet-dot green"></span>
+                                    <span class="snippet-title">bank_system.cpp</span>
+                                </div>
+                                <code>class SavingsAccount : public BankAccount { ... };</code>
+                            </div>
+                            <span class="project-badge"><i data-lucide="box"></i> OOP Core</span>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">C++ &bull; Object-Oriented Design</span>
+                                <span class="project-status">Robust OOP</span>
+                            </div>
+                            <h3 class="project-title">OmniBank - Core Banking Management System</h3>
+                            <p class="project-desc">
+                                A comprehensive banking simulation modeling real-world transactional workflows. Demonstrates rigorous OOP principles: abstract base classes, virtual methods for interest computation, and persistent encrypted file storage for account audits.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>C++</span>
+                                <span>OOP Architecture</span>
+                                <span>File I/O</span>
+                                <span>Security / Validation</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Hamza-Advani" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <i data-lucide="github"></i> Source Code
+                                </a>
+                                <button class="btn btn-primary btn-sm project-modal-trigger" data-project="omnibank">
+                                    <span>Details</span>
+                                    <i data-lucide="arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Modern Portfolio Web App -->
+                    <article class="project-card glass-panel reveal" data-category="web">
+                        <div class="project-banner project-banner-web">
+                            <div class="project-banner-overlay"></div>
+                            <div class="project-code-snippet">
+                                <div class="snippet-header">
+                                    <span class="snippet-dot red"></span>
+                                    <span class="snippet-dot yellow"></span>
+                                    <span class="snippet-dot green"></span>
+                                    <span class="snippet-title">portfolio.js</span>
+                                </div>
+                                <code>themeToggle.addEventListener('click', switchTheme);</code>
+                            </div>
+                            <span class="project-badge"><i data-lucide="layout"></i> Web Platform</span>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Web Systems &bull; Vanilla Stack</span>
+                                <span class="project-status live">Production</span>
+                            </div>
+                            <h3 class="project-title">Nexus Portfolio - Technology-Inspired Platform</h3>
+                            <p class="project-desc">
+                                An ultra-responsive, lightweight developer portfolio built with Vanilla HTML5, CSS3, and JavaScript. Engineered with zero framework overhead, dark/light theme persistence, interactive cyber terminal, glassmorphic UI, and 60fps animations.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>HTML5</span>
+                                <span>Vanilla CSS</span>
+                                <span>JavaScript ES6+</span>
+                                <span>Responsive UX</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Hamza-Advani" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <i data-lucide="github"></i> Source Code
+                                </a>
+                                <button class="btn btn-primary btn-sm project-modal-trigger" data-project="nexus">
+                                    <span>Details</span>
+                                    <i data-lucide="arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Academic Journey Section -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag"><i data-lucide="graduation-cap"></i> Academic Path</span>
+                    <h2 class="section-title">Education &amp; Milestones</h2>
+                    <p class="section-subtitle">Chronological progression in computer science, mathematics, and engineering</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+
+                    <!-- Timeline Item 1: GU Tech BSCS -->
+                    <div class="timeline-entry reveal">
+                        <div class="timeline-marker current">
+                            <i data-lucide="sparkles"></i>
+                        </div>
+                        <div class="timeline-card glass-panel">
+                            <div class="timeline-badge-row">
+                                <span class="timeline-badge active-badge">Current Academic Program</span>
+                                <span class="timeline-date"><i data-lucide="calendar"></i> 2026 &ndash; 2030</span>
+                            </div>
+                            <h3 class="timeline-institution">GU Tech</h3>
+                            <h4 class="timeline-degree">Bachelor of Science in Computer Science (BSCS)</h4>
+                            <p class="timeline-desc">
+                                Currently pursuing undergraduate studies with core focus on computational theory, Data Structures &amp; Algorithms, Object-Oriented Software Design, Operating Systems, and modern software engineering practices.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Computer Science</span>
+                                <span>Object-Oriented Programming</span>
+                                <span>Data Structures</span>
+                                <span>Discrete Math</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: Intermediate Pre-Engineering -->
+                    <div class="timeline-entry reveal">
+                        <div class="timeline-marker">
+                            <i data-lucide="check"></i>
+                        </div>
+                        <div class="timeline-card glass-panel">
+                            <div class="timeline-badge-row">
+                                <span class="timeline-badge">Higher Secondary / Intermediate</span>
+                                <span class="timeline-date"><i data-lucide="calendar"></i> Completed</span>
+                            </div>
+                            <h3 class="timeline-institution">Government National College</h3>
+                            <h4 class="timeline-degree">HSC - Pre-Engineering</h4>
+                            <p class="timeline-desc">
+                                Intensive coursework in Advanced Mathematics (Calculus, Trigonometry, Analytical Geometry) and Physics. Developed solid analytical rigor and structured problem-solving skills that now power algorithmic coding.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Advanced Mathematics</span>
+                                <span>Applied Physics</span>
+                                <span>Analytical Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: Matric Computer Science -->
+                    <div class="timeline-entry reveal">
+                        <div class="timeline-marker">
+                            <i data-lucide="check"></i>
+                        </div>
+                        <div class="timeline-card glass-panel">
+                            <div class="timeline-badge-row">
+                                <span class="timeline-badge">Secondary School Certificate</span>
+                                <span class="timeline-date"><i data-lucide="calendar"></i> Completed</span>
+                            </div>
+                            <h3 class="timeline-institution">Iqra Huffaz Boys Secondary School</h3>
+                            <h4 class="timeline-degree">SSC - Computer Science</h4>
+                            <p class="timeline-desc">
+                                First formal introduction to computing science, digital electronics logic, basic algorithms, and programming concepts. Cultivated lifelong enthusiasm for technology and coding.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Computer Fundamentals</span>
+                                <span>Basic Programming</span>
+                                <span>Mathematics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag"><i data-lucide="message-square"></i> Connect</span>
+                    <h2 class="section-title">Let's Build Something Together</h2>
+                    <p class="section-subtitle">Interested in collaborating, offering an internship, or discussing software? Reach out!</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Left: Direct Info & Social Channels -->
+                    <div class="contact-info-card glass-panel reveal">
+                        <h3 class="contact-card-title">Get in Touch</h3>
+                        <p class="contact-card-lead">
+                            I am always thrilled to discuss technology, software engineering opportunities, or academic collaborations.
+                        </p>
+
+                        <div class="contact-channels">
+                            <!-- Email Item with Copy Button -->
+                            <div class="channel-item">
+                                <div class="channel-icon"><i data-lucide="mail"></i></div>
+                                <div class="channel-details">
+                                    <span class="channel-label">Email Address</span>
+                                    <a href="mailto:hamzaadvani2006@gmail.com" class="channel-value">hamzaadvani2006@gmail.com</a>
+                                </div>
+                                <button class="copy-email-btn icon-btn" data-email="hamzaadvani2006@gmail.com" title="Copy email address" aria-label="Copy email">
+                                    <i data-lucide="copy"></i>
+                                </button>
+                            </div>
+
+                            <!-- Location Item -->
+                            <div class="channel-item">
+                                <div class="channel-icon"><i data-lucide="map-pin"></i></div>
+                                <div class="channel-details">
+                                    <span class="channel-label">Current Location</span>
+                                    <span class="channel-value">Karachi, Sindh, Pakistan</span>
+                                </div>
+                            </div>
+
+                            <!-- Education / University -->
+                            <div class="channel-item">
+                                <div class="channel-icon"><i data-lucide="building"></i></div>
+                                <div class="channel-details">
+                                    <span class="channel-label">University</span>
+                                    <span class="channel-value">GU Tech (BSCS 2026&ndash;2030)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Buttons Row -->
+                        <div class="contact-social-section">
+                            <span class="social-heading">Professional Profiles:</span>
+                            <div class="social-links-grid">
+                                <a href="https://github.com/Hamza-Advani" target="_blank" rel="noopener noreferrer" class="social-box" title="GitHub">
+                                    <i data-lucide="github"></i>
+                                    <div>
+                                        <strong>GitHub</strong>
+                                        <small>@Hamza-Advani</small>
+                                    </div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/mumairkhan13/" target="_blank" rel="noopener noreferrer" class="social-box" title="LinkedIn">
+                                    <i data-lucide="linkedin"></i>
+                                    <div>
+                                        <strong>LinkedIn</strong>
+                                        <small>Connect on LinkedIn</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Modern Interactive Contact Form -->
+                    <div class="contact-form-card glass-panel reveal">
+                        <h3 class="contact-card-title">Send a Message</h3>
+                        <p class="contact-card-lead">Fill in the fields below and I'll get back to you promptly.</p>
+
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Full Name <span class="req">*</span></label>
+                                    <div class="input-wrap">
+                                        <i data-lucide="user" class="input-icon"></i>
+                                        <input type="text" id="form-name" name="name" placeholder="John Doe" required autocomplete="name">
+                                    </div>
+                                    <span class="form-error-msg" id="name-error"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-email">Your Email Address <span class="req">*</span></label>
+                                    <div class="input-wrap">
+                                        <i data-lucide="mail" class="input-icon"></i>
+                                        <input type="email" id="form-email" name="email" placeholder="john@example.com" required autocomplete="email">
+                                    </div>
+                                    <span class="form-error-msg" id="email-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <div class="input-wrap">
+                                    <i data-lucide="bookmark" class="input-icon"></i>
+                                    <input type="text" id="form-subject" name="subject" placeholder="Project Collaboration / Internship Opportunity">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="label-with-counter">
+                                    <label for="form-message">Your Message <span class="req">*</span></label>
+                                    <span class="char-counter" id="char-counter">0 / 500</span>
+                                </div>
+                                <div class="input-wrap textarea-wrap">
+                                    <textarea id="form-message" name="message" rows="5" maxlength="500" placeholder="Hello Hamza, I came across your portfolio and would like to connect regarding..." required></textarea>
+                                </div>
+                                <span class="form-error-msg" id="message-error"></span>
+                            </div>
+
+                            <button type="submit" id="form-submit-btn" class="btn btn-primary btn-block btn-lg">
+                                <span class="btn-text">Send Message</span>
+                                <i data-lucide="send" class="btn-icon"></i>
+                                <span class="spinner" aria-hidden="true"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-symbol">&lt;</span>
+                        <span class="logo-text">MH</span>
+                        <span class="logo-symbol">/&gt;</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Muhammad Hamza &bull; BSCS Student at GU Tech, Karachi.<br>
+                        Passionate about systems programming, data structures, and practical software engineering.
+                    </p>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-status-col">
+                    <h4 class="footer-heading">System Status</h4>
+                    <div class="status-indicator-box">
+                        <span class="status-live-pulse"></span>
+                        <span>Portfolio Live &bull; 99.9% Uptime</span>
+                    </div>
+                    <p class="status-tech-note">Built with semantic HTML5, pure CSS3, and modern ES6+ JavaScript.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Muhammad Hamza. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/Hamza-Advani" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="https://www.linkedin.com/in/mumairkhan13/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="mailto:hamzaadvani2006@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Resume Modal -->
+    <div id="resume-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+        <div class="modal-dialog glass-panel">
+            <div class="modal-header">
+                <div class="modal-header-left">
+                    <i data-lucide="file-text" class="modal-icon"></i>
+                    <div>
+                        <h3 id="resume-modal-title" class="modal-title">Curriculum Vitae</h3>
+                        <p class="modal-subtitle">Muhammad Hamza &bull; BSCS Student</p>
+                    </div>
+                </div>
+                <div class="modal-header-actions">
+                    <button id="print-resume-btn" class="btn btn-outline btn-sm" title="Print or save as PDF">
+                        <i data-lucide="printer"></i>
+                        <span>Print / Save PDF</span>
+                    </button>
+                    <button id="close-resume-modal" class="icon-btn close-btn" aria-label="Close resume modal">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal-body printable-resume">
+                <!-- Resume Header -->
+                <div class="cv-header">
+                    <h2>Muhammad Hamza</h2>
+                    <p class="cv-role">BSCS Student | Software Developer</p>
+                    <div class="cv-contact-row">
+                        <span><i data-lucide="mail"></i> hamzaadvani2006@gmail.com</span>
+                        <span><i data-lucide="map-pin"></i> Karachi, Pakistan</span>
+                        <span><i data-lucide="github"></i> github.com/Hamza-Advani</span>
+                        <span><i data-lucide="linkedin"></i> linkedin.com/in/mumairkhan13</span>
+                    </div>
+                </div>
+
+                <!-- Professional Summary -->
+                <div class="cv-section">
+                    <h3 class="cv-section-title">Summary</h3>
+                    <p>
+                        Dedicated Computer Science undergraduate at GU Tech with solid Pre-Engineering foundations in analytical mathematics and logic. Passionate about software development, algorithms, Object-Oriented Programming (OOP), and writing clean, reliable code in C, C++, and Python. Actively seeking opportunities to build practical software solutions and collaborate on engineering projects.
+                    </p>
+                </div>
+
+                <!-- Education -->
+                <div class="cv-section">
+                    <h3 class="cv-section-title">Education</h3>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <strong>Bachelor of Science in Computer Science (BSCS)</strong>
+                            <span class="cv-date">2026 &ndash; 2030</span>
+                        </div>
+                        <div class="cv-item-sub">GU Tech, Karachi, Pakistan</div>
+                        <p>Focus: Programming Fundamentals, Object-Oriented Programming, Data Structures, Discrete Mathematics.</p>
+                    </div>
+
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <strong>HSC &ndash; Pre-Engineering</strong>
+                            <span class="cv-date">Completed</span>
+                        </div>
+                        <div class="cv-item-sub">Government National College, Karachi</div>
+                        <p>Focus: Calculus, Trigonometry, Analytical Physics, Problem Solving.</p>
+                    </div>
+
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <strong>SSC &ndash; Computer Science</strong>
+                            <span class="cv-date">Completed</span>
+                        </div>
+                        <div class="cv-item-sub">Iqra Huffaz Boys Secondary School, Karachi</div>
+                        <p>Focus: Computer Science Foundations, Mathematics, Science.</p>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="cv-section">
+                    <h3 class="cv-section-title">Technical Skills</h3>
+                    <div class="cv-skills-grid">
+                        <div>
+                            <strong>Languages:</strong> C, C++, Python 3, HTML5, CSS3, JavaScript
+                        </div>
+                        <div>
+                            <strong>Core Concepts:</strong> Object-Oriented Programming (OOP), Data Structures, Algorithms, Memory Management
+                        </div>
+                        <div>
+                            <strong>Tools &amp; Environment:</strong> Git, GitHub, VS Code, GCC / G++, Linux / Terminal
+                        </div>
+                        <div>
+                            <strong>Spoken Languages:</strong> Urdu (Native), English (Intermediate / Professional)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Selected Projects -->
+                <div class="cv-section">
+                    <h3 class="cv-section-title">Key Projects</h3>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <strong>Algoverse &ndash; Algorithm Visualizer &amp; Benchmarker</strong>
+                            <span>C++, STL</span>
+                        </div>
+                        <p>Implemented sorting and pathfinding algorithms with step-by-step execution metrics and performance benchmarks.</p>
+                    </div>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <strong>PyTrend &ndash; Automated Web Intelligence Scraper</strong>
+                            <span>Python, BeautifulSoup</span>
+                        </div>
+                        <p>Engineered multi-threaded web scraper extracting and parsing structured trends with automated CSV/JSON pipeline.</p>
+                    </div>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <strong>OmniBank &ndash; Core Banking Simulation System</strong>
+                            <span>C++, OOP, File I/O</span>
+                        </div>
+                        <p>Modeled bank account hierarchy, transaction ledger, and secure file serialization using inheritance and polymorphism.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Project Details Modal -->
+    <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+        <div class="modal-dialog glass-panel">
+            <div class="modal-header">
+                <div class="modal-header-left">
+                    <i data-lucide="code" class="modal-icon"></i>
+                    <div>
+                        <h3 id="project-modal-title" class="modal-title">Project Overview</h3>
+                        <p id="project-modal-subtitle" class="modal-subtitle">Technical Details &amp; Specifications</p>
+                    </div>
+                </div>
+                <button id="close-project-modal" class="icon-btn close-btn" aria-label="Close project details">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="project-modal-content">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Back-to-Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Scroll to top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+    <!-- Script Execution -->
+    <script src="script.js"></script>
+    <script>
+        // Ensure Lucide initializes properly
+        if (window.lucide) {
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>
